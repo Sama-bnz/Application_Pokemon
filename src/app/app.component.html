@@ -8,7 +8,7 @@
         <!-- Le "let" et le "of" sont imposé pour bouclé avec *ngFor -->
         <!-- ici on fais une boucle sur le tableau de liste de pokemon, donc 1 puis 2 puis 3 , tout ça dans l'ordre, comme une boucle classique en somme -->
         <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
-            <div class="card horizontal">
+            <div class="card horizontal" pkmnBorderCard>
                 <div class="card-image">
                     <img [src]="pokemon.picture"/>
                 </div>
@@ -23,24 +23,6 @@
     </div>
 </div>
 
-
-
-
-<input 
-    #input
-    (keyup.enter)="selectPokemon(input.value)"
-    type="number"
-/>  
-    <!-- Le message sera affiché grace à *ngIf uniquement si le pokemon est trouvé . -->
-<p *ngIf="pokemonSelected">
-        <!-- Affichage du pokemon selectionné  -->
-    Vous avez sélectionné le pokemon: {{ pokemonSelected?.name }} 
-</p>
-
-<p *ngIf="!pokemonSelected">
-    <!-- Affichage négatif  -->
-    Aucun pokémon n'a été trouvé.
-</p>
 
    
 
