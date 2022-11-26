@@ -5,18 +5,27 @@ import { Pokemon } from './pokemon';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'})
+  templateUrl: 'app.component.html'})
   
 export class AppComponent implements OnInit{
   pokemonList: Pokemon[] = POKEMONS;
+ // Je déclare une nouvelle propriété qui correspondra au pokemon sélectionné par l'utilisateur
+ pokemonSelected: Pokemon|undefined;
 
 
   ngOnInit() {
     console.table(this.pokemonList);
-    this.selectPokemon(this.pokemonList[0]);
   }
 
-  selectPokemon(pokemon: Pokemon){
-    console.log(`vous avez cliquer sur le pokemon ${pokemon.name}`);
+  selectPokemon(pokemonId: string){
+  //J'affiche le pokemon qui correspond à l'identifiant selectionné
+    const pokemon: Pokemon|undefined = this.pokemonList.find(pokemon => pokemon.id == +pokemonId);
+    if(pokemon){
+      console.log(`vous avez cliquer sur le pokemon ${pokemon.name}`);
+      this.pokemonSelected = pokemon;
+    }else {
+      console.log(`Ce pokémon n'existe pas.`);
+      this.pokemonSelected = pokemon;
+    }
   }
 }
