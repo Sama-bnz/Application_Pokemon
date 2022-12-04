@@ -1,27 +1,15 @@
-<h1 class="center">Liste de Pokémons</h1>
-<!--((LIGNE 5)) Je declare une varriable referencée dans input -->
-<!-- ((LIGNE 7)) Je recupere la chaine de caractere avec l'index que veux saisir l'utilisateur -->
-<!-- ((LIGNE7))(keyup.enter) permet de dire à angular qu'on veux remonter l'information uniquement quand la touche entrée est appuyer -->
 
-<div class="container">
-    <div class="row">
-        <!-- Le "let" et le "of" sont imposé pour bouclé avec *ngFor -->
-        <!-- ici on fais une boucle sur le tableau de liste de pokemon, donc 1 puis 2 puis 3 , tout ça dans l'ordre, comme une boucle classique en somme -->
-        <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
-            <div class="card horizontal" pkmnBorderCard>
-                <div class="card-image">
-                    <img [src]="pokemon.picture"/>
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>{{ pokemon.name }}</p>
-                        <p><small>{{pokemon.created}}</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">
+            Pokédex
+        </a>
     </div>
-</div>
+</nav>
+<router-outlet></router-outlet>
+
+
+
 
 
    

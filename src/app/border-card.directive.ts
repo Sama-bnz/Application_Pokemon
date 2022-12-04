@@ -5,9 +5,12 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export class BorderCardDirective {
 
+  //Couleur initial de la carte 
   private initialColor: string = '#f5f5f5';
+  //couleur par défaut lorsque je passes ma souris sur une carte
   private defaultColor: string = '#007AFF';
-  private defaultHeight: number = 180;
+  //Taille par défaut de la carte
+  private defaultHeight: number = 200;
 
   constructor(private el: ElementRef) {
     this.setBorder(this.initialColor);
