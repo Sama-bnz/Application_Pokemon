@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import{POKEMONS} from '../../mock-pokemon-list';
 import { Pokemon } from '../../pokemon';
+import { PokemonService } from '../pokemon.service';
 
 
 
@@ -16,16 +16,19 @@ export class DetailPokemonComponent implements OnInit {
   pokemon: Pokemon|undefined;
 
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private pokemonService: PokemonService
+    ) {}
     
 
     ngOnInit() {
-      this.pokemonList = POKEMONS ;
       //On fait appel à la route courante à l'instant T je récupere le paramètre identifiant.
       const pokemonId: string|null= this.route.snapshot.paramMap.get('id');
-
       if(pokemonId) {
-        this.pokemon = this.pokemonList.find(pokemon => pokemon.id == +pokemonId)
+      //Le + devant pokemonId permet de changer les chaine de caractere paramétrée de base en nombre.
+        this.pokemon = this.pokemonService.getPokemonById(+pokemonId);
       }
     }
 
@@ -33,4 +36,7 @@ export class DetailPokemonComponent implements OnInit {
       this.router.navigate(['/pokemons']);
     }
   
+    gotToEditPokemon(pokemon:Pokemon){
+      this.router.navigate(['/edit/pokemon', pokemon.id]);
+    }
 }
