@@ -281,11 +281,56 @@ export const POKEMONS: Pokemon[] = [
         created: new Date()
     },
     {
+        id: 9,
+        name: "Nidoqueen",
+        hp: 38,
+        cp: 22,
+        picture: "assets/images/nidoqueen.png",
+        types: ["Poison","Sol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Nidoran♂",
+        hp: 16,
+        cp: 6,
+        picture: "assets/images/nidoran_male.png",
+        types: ["Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Nidorino",
+        hp: 26,
+        cp: 16,
+        picture: "assets/images/nidorino.png",
+        types: ["Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Nidoking",
+        hp: 36,
+        cp: 26,
+        picture: "assets/images/nidoking.png",
+        types: ["Poison","Sol"],
+        created: new Date()
+    },
+    {
         id: 12,
         name: "Mélofée",
         hp: 25,
         cp: 5,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
+        types: ["Fée"],
+        created: new Date()
+    },
+    {
+        id: 12,
+        name: "Mélodelfe",
+        hp: 35,
+        cp: 15,
+        picture: "assets/images/melodelfe.png",
         types: ["Fée"],
         created: new Date()
     },
@@ -297,5 +342,230 @@ export const POKEMONS: Pokemon[] = [
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
         types: ["Feu"],
         created: new Date()
-    }
+    },
+    {
+        id: 13,
+        name: "Feunard",
+        hp: 27,
+        cp: 18,
+        picture: "assets/images/feunard.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 12,
+        name: "Rondoudou",
+        hp: 15,
+        cp: 5,
+        picture: "assets/images/rondoudou.png",
+        types: ["Fée","Normal"],
+        created: new Date()
+    },
+    {
+        id: 12,
+        name: "Grodoudou",
+        hp: 25,
+        cp: 8,
+        picture: "assets/images/grodoudou.png",
+        types: ["Fée","Normal"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Nosferapti",
+        hp: 16,
+        cp: 6,
+        picture: "assets/images/nosferapti.png",
+        types: ["Poison","Vol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Nosferalto",
+        hp: 26,
+        cp: 16,
+        picture: "assets/images/nosferalto.png",
+        types: ["Poison","Vol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Mystherbe",
+        hp: 10,
+        cp: 4,
+        picture: "assets/images/mystherbe.png",
+        types: ["Poison","Plante"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Ortide",
+        hp: 20,
+        cp: 8,
+        picture: "assets/images/ortide.png",
+        types: ["Poison","Plante"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Rafflesia",
+        hp: 30,
+        cp: 15,
+        picture: "assets/images/rafflesia.png",
+        types: ["Poison","Plante"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Paras",
+        hp: 10,
+        cp: 5,
+        picture: "assets/images/paras.png",
+        types: ["Insecte","Plante"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Parasect",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/parasect.png",
+        types: ["Insecte","Plante"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Mimitoss",
+        hp: 12,
+        cp: 4,
+        picture: "assets/images/mimitoss.png",
+        types: ["Insecte","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Aéromite",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/aeromite.png",
+        types: ["Insecte","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Taupiqueur",
+        hp: 12,
+        cp: 6,
+        picture: "assets/images/taupiqueur.png",
+        types: ["Sol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Triopikeur",
+        hp: 22,
+        cp: 16,
+        picture: "assets/images/triopikeur.png",
+        types: ["Sol"],
+        created: new Date()
+    },
+    {
+        id: 7,
+        name: "Miaouss",
+        hp: 15,
+        cp: 3,
+        picture: "assets/images/miaouss.png",
+        types: ["Normal"],
+        created: new Date()
+    },
+    {
+        id: 7,
+        name: "Persian",
+        hp: 25,
+        cp: 13,
+        picture: "assets/images/persian.png",
+        types: ["Normal"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Psykokwak",
+        hp: 13,
+        cp: 5,
+        picture: "assets/images/psyduck.jpg",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Akwakwak",
+        hp: 33,
+        cp: 15,
+        picture: "assets/images/akwakwak.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Férosinge",
+        hp: 13,
+        cp: 5,
+        picture: "assets/images/ferosinge.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Colossinge",
+        hp: 34,
+        cp: 28,
+        picture: "assets/images/colossinge.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Caninos",
+        hp: 18,
+        cp: 6,
+        picture: "assets/images/caninos.jpg",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Arcanin",
+        hp: 38,
+        cp: 26,
+        picture: "assets/images/arcanin.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Ptitard",
+        hp: 12,
+        cp: 6,
+        picture: "assets/images/ptitard.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Tétarte",
+        hp: 22,
+        cp: 16,
+        picture: "assets/images/tetarte.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Ptitard",
+        hp: 42,
+        cp: 36,
+        picture: "assets/images/tartard.png",
+        types: ["Eau","Combat"],
+        created: new Date()
+    },
 ];

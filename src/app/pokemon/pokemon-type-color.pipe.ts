@@ -31,6 +31,9 @@ export class PokemonTypeColorPipe implements PipeTransform {
       case 'Poison':
         color = 'deep-purple accent-1';
         break;
+      case 'Sol':
+        color = 'brown';
+        break;
       case 'Fée':
         color = 'pink lighten-4';
         break;

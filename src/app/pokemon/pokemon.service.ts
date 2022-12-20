@@ -25,7 +25,8 @@ export class PokemonService {
      'Fée', 
      'Vol', 
      'Combat',
-     'Psy'
+     'Psy',
+     'Sol',
     ];
   }
 }
