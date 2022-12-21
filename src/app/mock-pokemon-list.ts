@@ -561,11 +561,300 @@ export const POKEMONS: Pokemon[] = [
     },
     {
         id: 4,
-        name: "Ptitard",
+        name: "Tartard",
         hp: 42,
         cp: 36,
         picture: "assets/images/tartard.png",
         types: ["Eau","Combat"],
         created: new Date()
     },
+    {
+        id: 4,
+        name: "Abra",
+        hp: 10,
+        cp: 2,
+        picture: "assets/images/abra.png",
+        types: ["Psy"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Kadabra",
+        hp: 20,
+        cp: 8,
+        picture: "assets/images/kadabra.png",
+        types: ["Psy"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Alakazam",
+        hp: 40,
+        cp: 34,
+        picture: "assets/images/alakazam.png",
+        types: ["Psy"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Machoc",
+        hp: 16,
+        cp: 8,
+        picture: "assets/images/machoc.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Machopeur",
+        hp: 26,
+        cp: 18,
+        picture: "assets/images/machopeur.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Mackogneur",
+        hp: 36,
+        cp: 30,
+        picture: "assets/images/mackogneur.png",
+        types: ["Combat"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Chétiflor",
+        hp: 23,
+        cp: 12,
+        picture: "assets/images/chetiflor.png",
+        types: ["Plante","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Boustiflor",
+        hp: 32,
+        cp: 21,
+        picture: "assets/images/boustiflor.png",
+        types: ["Plante","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Empiflor",
+        hp: 42,
+        cp: 22,
+        picture: "assets/images/empiflor.png",
+        types: ["Plante","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Tentacool",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/tentacool.png",
+        types: ["Eau","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Tentacruel",
+        hp: 42,
+        cp: 27,
+        picture: "assets/images/tentacruel.png",
+        types: ["Eau","Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Racaillou",
+        hp: 30,
+        cp: 8,
+        picture: "assets/images/racaillou.png",
+        types: ["Roche","Sol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Gravalanch",
+        hp: 45,
+        cp: 16,
+        picture: "assets/images/gravalanch.png",
+        types: ["Roche","Sol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Racaillou",
+        hp: 55,
+        cp: 26,
+        picture: "assets/images/grolem.png",
+        types: ["Roche","Sol"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Ponyta",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/ponyta.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Galopa",
+        hp: 42,
+        cp: 24,
+        picture: "assets/images/galopa.png",
+        types: ["Feu"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Ramoloss",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/ramoloss.png",
+        types: ["Eau","Psy"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Ponyta",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/flagadoss.png",
+        types: ["Eau","Psy"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Magéti",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/magneti.png",
+        types: ["Electrik","Acier"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Magéton",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/magneton.png",
+        types: ["Electrik","Acier"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Canarticho",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/canarticho.png",
+        types: ["Vol","Normal"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Doduo",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/doduo.png",
+        types: ["Vol","Normal"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Dodrio",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/dodrio.png",
+        types: ["Vol","Normal"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Otaria",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/otaria.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Lamantine",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/lamantine.png",
+        types: ["Eau","Glace"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Tadmorv",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/tadmorv.png",
+        types: ["Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Grotadmorv",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/grotadmorv.png",
+        types: ["Poison"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Kokiyas",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/kokiyas.png",
+        types: ["Eau"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Crustabri",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/crustabri.png",
+        types: ["Eau","Glace"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Fantominus",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/fantominus.png",
+        types: ["Poison","Spectre"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Spectrum",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/spectrum.png",
+        types: ["Poison","Spectre"],
+        created: new Date()
+    },
+    {
+        id: 9,
+        name: "Ectoplasma",
+        hp: 22,
+        cp: 12,
+        picture: "assets/images/ectoplasma.png",
+        types: ["Poison","Spectre"],
+        created: new Date()
+    },
+
 ];

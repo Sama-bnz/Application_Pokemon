@@ -27,6 +27,10 @@ export class PokemonService {
      'Combat',
      'Psy',
      'Sol',
+     'Roche',
+     'Acier',
+     'Glace',
+     'Spectre',
     ];
   }
 }
