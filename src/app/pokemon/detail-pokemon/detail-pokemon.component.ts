@@ -28,7 +28,8 @@ export class DetailPokemonComponent implements OnInit {
       const pokemonId: string|null= this.route.snapshot.paramMap.get('id');
       if(pokemonId) {
       //Le + devant pokemonId permet de changer les chaine de caractere paramétrée de base en nombre.
-        this.pokemon = this.pokemonService.getPokemonById(+pokemonId);
+      this.pokemonService.getPokemonById(+pokemonId)
+      .subscribe(pokemon => this.pokemon = pokemon);
       }
     }
 
@@ -38,5 +39,10 @@ export class DetailPokemonComponent implements OnInit {
   
     gotToEditPokemon(pokemon:Pokemon){
       this.router.navigate(['/edit/pokemon', pokemon.id]);
+    }
+
+    deletePokemon(pokemon: Pokemon){
+      this.pokemonService.deletePokemonById(pokemon.id)
+      .subscribe(()=> this.goToPokemonList());
     }
 }

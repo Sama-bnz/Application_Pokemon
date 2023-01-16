@@ -52,9 +52,13 @@ constructor(
     return true;
   }
 
+
   onSubmit(){
-    console.log('Submit form ! ');
+
+    this.pokemonService.updatePokemon(this.pokemon)
+      .subscribe(() => 
+        this.router.navigate(['/pokemon', this.pokemon.id]));
     //Enfin je redirige l'utilisateur sur la page qu'il vient de modifier
-    this.router.navigate(['/pokemon', this.pokemon.id]);
-  }
+    //this.router.navigate(['/pokemon', this.pokemon.id]);
+    }
 }

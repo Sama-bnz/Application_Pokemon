@@ -9,6 +9,7 @@ import { PokemonService } from './pokemon.service';
 import { FormsModule } from '@angular/forms';
 import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
 import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
+import { CreatePokemonComponent } from './create-pokemon/create-pokemon.component';
 
 const pokemonRoutes: Routes = [
   //je déclare un objet qui as une propriété "path" et je lui associe un composant ex:LisPokemonComponent
@@ -24,7 +25,8 @@ const pokemonRoutes: Routes = [
     BorderCardDirective,
     PokemonTypeColorPipe,
     PokemonFormComponent,
-    EditPokemonComponent
+    EditPokemonComponent,
+    CreatePokemonComponent
   ],
   imports: [
     CommonModule,
