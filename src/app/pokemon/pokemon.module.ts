@@ -14,6 +14,7 @@ import { CreatePokemonComponent } from './create-pokemon/create-pokemon.componen
 const pokemonRoutes: Routes = [
   //je déclare un objet qui as une propriété "path" et je lui associe un composant ex:LisPokemonComponent
   { path: 'edit/pokemon/:id', component:EditPokemonComponent},
+  { path: 'pokemon/add', component:CreatePokemonComponent},
   { path: 'pokemons', component:ListPokemonComponent},
   { path: 'pokemon/:id', component:DetailPokemonComponent},
 ];

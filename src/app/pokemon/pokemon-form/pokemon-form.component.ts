@@ -12,6 +12,7 @@ import { PokemonService } from '../pokemon.service';
 export class PokemonFormComponent implements OnInit {
 @Input() pokemon: Pokemon;
 types:string[];
+isAddForm: boolean ;
 
 constructor(
   private pokemonService: PokemonService,
@@ -22,6 +23,7 @@ constructor(
     //pokemonTypeList
     //J'initialise le formulaire avec tout les types de pokémon présents dans le projet
     this.types = this.pokemonService.getPokemonTypeList();
+    this.isAddForm = this.router.url.includes('add');
 }
   hasType(type: string): boolean{
     //Je vérifie si un pokemon as ou n'a pas un type à l'initialisation du formumaire
@@ -55,10 +57,16 @@ constructor(
 
   onSubmit(){
 
-    this.pokemonService.updatePokemon(this.pokemon)
+    if(this.isAddForm){
+      this.pokemonService.createPokemon(this.pokemon)
+      .subscribe(() => this.router.navigate(['/pokemon', this.pokemon.id]));
+    }else{
+      this.pokemonService.updatePokemon(this.pokemon)
       .subscribe(() => 
-        this.router.navigate(['/pokemon', this.pokemon.id]));
+      this.router.navigate(['/pokemon', this.pokemon.id]));
     //Enfin je redirige l'utilisateur sur la page qu'il vient de modifier
     //this.router.navigate(['/pokemon', this.pokemon.id]);
+    }
+   
     }
 }

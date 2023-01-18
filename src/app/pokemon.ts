@@ -9,6 +9,7 @@ export class Pokemon {
   created: Date;
 
   constructor(
+    // Le pokemon par défaut
     name: string = 'Entrer un nom... ',
     hp: number = 100,
     cp: number = 10,
