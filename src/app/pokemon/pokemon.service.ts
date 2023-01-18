@@ -31,12 +31,27 @@ export class PokemonService {
     );
   }
 
-  createPokemon(pokemon: Pokemon): Observable<null>{
+  searchPokemonList(term: string): Observable<Pokemon[]> {
+
+    if(term.length <=1) {
+      return of([]);
+
+    }
+
+    return this.http.get<Pokemon[]>(`api/pokemons/?name=${term}`).pipe(
+      //Dés que j'ai la réponse je la log 
+      tap((response) => this.log(response)),
+      //Si il y as une erreur je log l'erreur en retournant undefined
+      catchError((error) => this.handleError(error, []))
+    );
+  }
+
+  createPokemon(pokemon: Pokemon): Observable<Pokemon>{
     const httpOptions = {
       headers: new HttpHeaders ({'Content-Type ' : 'application/json'})
     };
 
-    return this.http.post('api/pokemons', pokemon, httpOptions).pipe(
+    return this.http.post<Pokemon>('api/pokemons', pokemon, httpOptions).pipe(
       //Dés que j'ai la réponse je la log 
       tap((response) => this.log(response)),
       //Si il y as une erreur je log l'erreur en retournant undefined

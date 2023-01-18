@@ -4,8 +4,8 @@ import { Pokemon } from 'src/app/pokemon';
 @Component({
   selector: 'app-create-pokemon',
   template: `
-    <h2 class="center">Créer un pokemon</h2> 
-    <app-pokemon-form [pokemon]="pokemon"]></app-pokemon-form>
+    <h2 class="center">Ajouter un pokemon</h2> 
+    <app-pokemon-form [pokemon]="pokemon"></app-pokemon-form>
   `
 })
 export class CreatePokemonComponent {

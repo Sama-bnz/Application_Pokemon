@@ -59,7 +59,7 @@ constructor(
 
     if(this.isAddForm){
       this.pokemonService.createPokemon(this.pokemon)
-      .subscribe(() => this.router.navigate(['/pokemon', this.pokemon.id]));
+      .subscribe((pokemon: Pokemon) => this.router.navigate(['/pokemon', pokemon.id]));
     }else{
       this.pokemonService.updatePokemon(this.pokemon)
       .subscribe(() => 
