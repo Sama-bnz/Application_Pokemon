@@ -12,13 +12,14 @@ import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
 import { CreatePokemonComponent } from './create-pokemon/create-pokemon.component';
 import { SearchPokemonComponent } from './search-pokemon/search-pokemon.component';
 import { LoaderComponent } from './loader/loader.component';
+import { AuthGuard } from '../auth.guard';
 
 const pokemonRoutes: Routes = [
   //je déclare un objet qui as une propriété "path" et je lui associe un composant ex:LisPokemonComponent
-  { path: 'edit/pokemon/:id', component:EditPokemonComponent},
-  { path: 'pokemon/create', component:CreatePokemonComponent},
-  { path: 'pokemons', component:ListPokemonComponent},
-  { path: 'pokemon/:id', component:DetailPokemonComponent},
+  { path: 'edit/pokemon/:id', component:EditPokemonComponent, canActivate: [AuthGuard]},
+  { path: 'pokemon/create', component:CreatePokemonComponent, canActivate: [AuthGuard]},
+  { path: 'pokemons', component:ListPokemonComponent, canActivate: [AuthGuard]},
+  { path: 'pokemon/:id', component:DetailPokemonComponent, canActivate: [AuthGuard]},
 ];
 
 @NgModule({
